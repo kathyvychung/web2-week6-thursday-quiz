@@ -1,0 +1,93 @@
+/* =============
+    Section 4
+============= */
+#section-4 {
+    h1 {
+        text-align: center;
+    }
+    
+    ul{ 
+        display: grid;
+        grid-gap: 20px;
+        grid-template-areas: section-4;
+
+        @include md {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-areas:
+                "gallery-1 gallery-2"
+                ". gallery-3";    
+        }
+
+        #gallery-1{
+            background-image: url('../img/4441.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+            padding: 30px;
+            
+
+            // @include md {
+            //     grid-area: gallery-1;
+            //     background-position: center top;
+            //     height: 900px; 
+            // }
+
+            // @include xl {
+            //     grid-area: gallery-1;
+            //     // background-position: right;
+            //     width: 700px;  
+            // }
+        }
+        #wall-sign {
+            background-color: $grey;
+            padding-top: 20px;
+            }
+
+        #gallery-2{
+            background-image: url('../img/Letterpress-Perspective-B-Cards-MockUp-6001.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+            
+        //     // @include md {
+        //     //     grid-area: gallery-2;
+        //     // }
+        //     // @include xl {
+        //     //     grid-area: gallery-2;
+        //     //     background-position: center;
+        //     //     width: 600px;
+        // // }
+        }
+            #Letterpress {
+                background-color: $grey;
+                padding: 10px;
+                }
+
+        #gallery-3{
+            background-image: url('../img/2342441.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+        // //     // @include md {
+        // //     //     grid-area: gallery-3;
+        // //     // }
+        // //     // @include xl {
+        // //     //     grid-area: gallery-3;
+        // //     //     background-position: center;
+        // //     //     width: 600px;
+        // //     // } 
+
+        // // @include md {
+        // //     grid-template-columns: repeat(3, 1fr);
+        // //     grid-template-areas:
+        // //         "gallery-1 gallery-2 gallery-3";
+        // // }  
+        }
+        #Card {
+            background-color: $grey;
+            padding: 10px;
+            }
+
+    }
+}

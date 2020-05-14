@@ -1,0 +1,61 @@
+/* =============
+    Section 2
+============= */
+#section-2{
+
+    @include xl {
+        display: grid;
+        grid-template-columns: auto 1200px auto;
+        grid-template-areas: ". section-2 .";
+    }
+    text-section {
+        grid-area: text-section;
+        margin: 20px;
+
+        h1 {
+            text-align: center;
+        }
+        body {
+            text-align: justify;
+        }
+
+    }
+    
+   aside {
+        grid-area: picture;
+        background-image: url('../img/4141.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 500px;
+
+        @include md {
+            height: 240px;
+        }
+
+        @include lg {
+            height: 600px;
+        }
+
+        @include xl {
+            height: 600px;
+        }
+    }
+
+    @include md {
+        display: grid;
+        grid-template-areas: "text-section picture";
+        grid-template-columns: 60% auto;
+    }
+
+    @include lg {
+        display: grid;
+        grid-template-areas: "picture text-section";
+        grid-template-columns: 50% auto;
+    }
+
+    // @include xl {
+    //     display: grid;
+    //     grid-template-areas: "picture text";
+    //     grid-template-columns: auto 1200px auto;
+    // }
+}

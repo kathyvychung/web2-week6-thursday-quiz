@@ -9,7 +9,7 @@ html {
 /* =============
     Variables
 ============= */
-/*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
 /**
@@ -29,6 +29,12 @@ html {
  */
 body {
   margin: 0; }
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block; }
 
 /**
  * Correct the font size and margin on `h1` elements within `section` and
@@ -311,44 +317,14 @@ template {
 /* =============
     Base
 ============= */
-figure {
-  padding: 0;
-  margin: 0; }
-
-ul {
-  padding: 0;
-  margin: 0; }
-  ul li {
-    list-style: none; }
-
-.container-grid {
-  display: grid;
-  grid-template-columns: auto 1200px auto;
-  grid-template-areas: ". grid-content .";
-  min-height: 100vh; }
-  .container-grid .grid-content {
-    grid-area: grid-content;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-
 /* =============
     Typography
 ============= */
-body {
+h1, h2 {
   font-family: 'Montserrat', sans-serif; }
 
-h1, h2, h3, h4 {
-  margin: 0;
-  padding: 0; }
-
-p {
-  margin: 0;
-  padding: 0; }
-
-.section-title {
-  font-weight: 300; }
+body {
+  font-family: 'Comfortaa', cursive; }
 
 /* =============
     Buttons
@@ -377,15 +353,116 @@ textarea {
 /* =============
     Footer
 ============= */
+footer {
+  background-color: #000;
+  height: 40px;
+  color: #E6633E; }
+
 /* =============
     Section 1
 ============= */
+#section-1 {
+  background-image: url("../img/main_slide_21.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 550px;
+  padding: 160px 0;
+  text-align: center; }
+  #section-1 h3 {
+    color: #1A5564;
+    font-size: 1.5rem; }
+  #section-1 body {
+    color: #338595; }
+  @media (min-width: 768px) {
+    #section-1 {
+      height: 700px; } }
+  @media (min-width: 992px) {
+    #section-1 {
+      height: 800px; } }
+  @media (min-width: 1200px) {
+    #section-1 {
+      height: 960px; } }
 /* =============
     Section 2
 ============= */
-/* =============
-    Section 3
-============= */
+@media (min-width: 1200px) {
+  #section-2 {
+    display: grid;
+    grid-template-columns: auto 1200px auto;
+    grid-template-areas: ". section-2 ."; } }
+
+#section-2 text-section {
+  grid-area: text-section;
+  margin: 20px; }
+  #section-2 text-section h1 {
+    text-align: center; }
+  #section-2 text-section body {
+    text-align: justify; }
+
+#section-2 aside {
+  grid-area: picture;
+  background-image: url("../img/4141.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 500px; }
+  @media (min-width: 768px) {
+    #section-2 aside {
+      height: 240px; } }
+  @media (min-width: 992px) {
+    #section-2 aside {
+      height: 600px; } }
+  @media (min-width: 1200px) {
+    #section-2 aside {
+      height: 600px; } }
+@media (min-width: 768px) {
+  #section-2 {
+    display: grid;
+    grid-template-areas: "text-section picture";
+    grid-template-columns: 60% auto; } }
+
+@media (min-width: 992px) {
+  #section-2 {
+    display: grid;
+    grid-template-areas: "picture text-section";
+    grid-template-columns: 50% auto; } }
+
 /* =============
     Section 4
 ============= */
+#section-4 h1 {
+  text-align: center; }
+
+#section-4 ul {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas: section-4; }
+  @media (min-width: 768px) {
+    #section-4 ul {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas: "gallery-1 gallery-2" ". gallery-3"; } }
+  #section-4 ul #gallery-1 {
+    background-image: url("../img/4441.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    padding: 30px; }
+  #section-4 ul #wall-sign {
+    background-color: #ECECEC;
+    padding-top: 20px; }
+  #section-4 ul #gallery-2 {
+    background-image: url("../img/Letterpress-Perspective-B-Cards-MockUp-6001.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 300px; }
+  #section-4 ul #Letterpress {
+    background-color: #ECECEC;
+    padding: 10px; }
+  #section-4 ul #gallery-3 {
+    background-image: url("../img/2342441.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 300px; }
+  #section-4 ul #Card {
+    background-color: #ECECEC;
+    padding: 10px; }

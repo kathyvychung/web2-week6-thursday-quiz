@@ -2,8 +2,33 @@
     Section 1
 ============= */
 #section-1{
-    .grid-content{
-        
+
+    background-image: url('../img/main_slide_21.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 550px;
+
+    padding: 160px 0;
+    text-align: center;
+    
+    h3 {
+        color: $navy;
+        font-size: rem-calc(24); 
     }
 
+    body {
+        color: $turquoise;
+    }
+    
+    @include md {
+        height: 700px;
+    }
+    
+    @include lg {
+       height: 800px; 
+    }
+
+    @include xl {
+        height: 960px;
+    }
 }
