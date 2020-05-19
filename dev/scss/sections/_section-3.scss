@@ -1,0 +1,152 @@
+/* =============
+    Section 4
+============= */
+#section-4 {
+    grid-template-areas: ". content .";
+
+    h1 {
+        text-align: center;
+    }
+
+    p {
+        text-align: justify;
+        font-size: 16px;
+    }
+    
+    ul{ 
+        display: grid;
+        margin: 10px;
+        grid-gap: 20px;
+        grid-area: content;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+            "card-1"
+            "card-2"
+            "card-3";
+
+        @include md {
+            display: grid;
+            grid-area: content;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 50px;
+            margin: 50px;
+            grid-template-areas:
+            "card-1 card-1 card-2 card-2"
+            ". card-3 card-3 .";
+            height: 1000px;
+
+        @include lg {
+            display:grid;
+            grid-area: content;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-areas:
+                "card-1 card-2 card-3";
+            height: 600px;
+            margin: 30px;
+        }
+            
+        }
+
+        #card-1 {
+            grid-area: card-1;
+
+            grid-template-areas:
+            "gallery-1"
+            "wall-sign";
+
+
+            #gallery-1{
+                grid-area: gallery-1;
+                background-image: url('../img/gallery1.jpg');
+                background-size: cover;
+                background-position: center;
+                height: 300px;
+
+                @include md {
+                    height: 200px;
+                }
+
+                @include lg {
+                    height: 240px
+                }
+            }
+    
+            #wall-sign {
+                grid-area: wall-sign;
+                background-color: $grey;
+                padding: 20px;
+
+                @include md {
+                    height: 236px;
+                }
+            }
+         }
+
+        #card-2 {
+            grid-area: card-2;
+
+            grid-template-areas:
+                "gallery-2"
+                "Letterpress";
+
+            #gallery-2{
+                grid-area: gallery-2;
+                background-image: url('../img/gallery2.jpg');
+                background-size: cover;
+                background-position: center;
+                height: 300px;
+
+                @include md {
+                    height: 200px;
+                }
+
+                @include lg {
+                    height: 240px
+                }
+            }
+        
+            #Letterpress {
+                grid-area: Letterpress;
+                background-color: $grey;
+                padding: 20px;
+
+                @include md {
+                    height: 236px;
+                }
+            }
+        }
+    
+        #card-3 {
+            grid-area: card-3;
+
+            grid-template-areas:
+                "gallery-3"
+                "card";
+        }
+        #gallery-3{
+            grid-area: gallery-3;
+            background-image: url('../img/gallery3.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+
+            @include md {
+                height: 200px;
+            }
+
+            @include lg {
+                height: 240px
+            }
+        }
+     
+        #Card {
+            grid-area: card;
+            background-color: $grey;
+            padding: 20px;
+            @include md {
+                height: 236px;
+            }
+            }
+
+    }
+}

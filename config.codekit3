@@ -9,14 +9,6 @@
 	],
 "creatorBuild": "32001",
 "files": {
-	"/build/.gitignore": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/build/.gitignore",
-		"oF": 0
-		},
 	"/deploy/css/styles-min.css": {
 		"aP": 1,
 		"bl": 0,
@@ -37,59 +29,81 @@
 		"oF": 0,
 		"oS": 3
 		},
-	"/deploy/img/2342441.jpg": {
+	"/deploy/img/aside.jpg": {
 		"ft": 16384,
-		"iS": 152155,
+		"iS": 21633,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/deploy/img/2342441.jpg",
+		"oAP": "/deploy/img/aside.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 1,
+		"opt": 0,
 		"q": 100
 		},
-	"/deploy/img/4141.jpg": {
+	"/deploy/img/gallery1.jpg": {
 		"ft": 16384,
-		"iS": 104961,
+		"iS": 19956,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/deploy/img/4141.jpg",
+		"oAP": "/deploy/img/gallery1.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 1,
+		"opt": 0,
 		"q": 100
 		},
-	"/deploy/img/4441.jpg": {
+	"/deploy/img/gallery2.jpg": {
 		"ft": 16384,
-		"iS": 139189,
+		"iS": 23285,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/deploy/img/4441.jpg",
+		"oAP": "/deploy/img/gallery2.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 1,
+		"opt": 0,
 		"q": 100
 		},
-	"/deploy/img/Letterpress-Perspective-B-Cards-MockUp-6001.jpg": {
+	"/deploy/img/gallery3.jpg": {
 		"ft": 16384,
-		"iS": 84293,
+		"iS": 23334,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/deploy/img/Letterpress-Perspective-B-Cards-MockUp-6001.jpg",
+		"oAP": "/deploy/img/gallery3.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 1,
+		"opt": 0,
 		"q": 100
 		},
-	"/deploy/img/main_slide_21.jpg": {
+	"/deploy/img/hero.jpg": {
 		"ft": 16384,
-		"iS": 1423110,
+		"iS": 247566,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/deploy/img/main_slide_21.jpg",
+		"oAP": "/deploy/img/hero.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 1,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/Oval.png": {
+		"ft": 32768,
+		"iS": 2243,
+		"oA": 0,
+		"oAP": "/deploy/img/Oval.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/social.png": {
+		"ft": 32768,
+		"iS": 2629,
+		"oA": 0,
+		"oAP": "/deploy/img/social.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
 	"/deploy/index.html": {
@@ -324,7 +338,7 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"/dev/scss/sections/_section-4.scss": {
+	"/dev/scss/sections/_section-3.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -332,7 +346,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/dev/scss/sections/_section-4.css",
+		"oAP": "/dev/scss/sections/_section-3.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -366,12 +380,28 @@
 		"oAP": "/dev/section-2.html",
 		"oF": 0
 		},
-	"/dev/section-4.kit": {
+	"/dev/section-3.kit": {
 		"cB": 0,
 		"ft": 2048,
 		"hM": 0,
 		"oA": 1,
-		"oAP": "/dev/section-4.html",
+		"oAP": "/dev/section-3.html",
+		"oF": 0
+		},
+	"/Github Respo.rtf": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/Github Respo.rtf",
+		"oF": 0
+		},
+	"/pa/.gitignore": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/pa/.gitignore",
 		"oF": 0
 		},
 	"/README.html": {
@@ -408,7 +438,7 @@
 	},
 "projectAttributes": {
 	"creationDate": 611177612.932163,
-	"displayValue": "web2-week6-thursday-quiz",
+	"displayValue": "Kathy Web 2",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "brackets-ucla",
 	"iconImageWasSetByUser": 0,
