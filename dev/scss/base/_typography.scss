@@ -8,7 +8,50 @@ h1,h2 {
 h2 {
     font-size: 24px;
 }
-p,h3 {
+
+h3 {
     font-family: 'Comfortaa', cursive;
+    font-size: rem-calc(24);
+
+    @include md {
+        font-size: rem-calc(38);
+    }
+
+    @include lg {
+        font-size: rem-calc(60);
+    }
+
+    @include xl {
+        font-size: rem-calc(70);
+    }
 }
 
+h4 {
+    font-family: 'Comfortaa', cursive;
+    font-size: rem-calc(16);
+
+    @include md {
+        font-size: rem-calc(25);
+    }
+
+    @include lg {
+        font-size: rem-calc(32);
+    }
+
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: rem-calc(16);
+
+    @include md {
+        font-size: rem-calc(17);
+        line-height: 23px;
+
+    }
+
+    @include lg {
+        font-size: rem-calc(20);
+        line-height: 29px;
+    }
+}

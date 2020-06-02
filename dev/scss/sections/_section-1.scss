@@ -2,79 +2,87 @@
     Section 1
 ============= */
 #section-1{
-
+    display: grid;
+    grid-template-columns: auto 320px auto;
+    grid-template-areas: ". grid-content .";
     background-image: url('../img/hero.jpg');
     background-size: cover;
     background-position: center;
     height: 550px;
 
-    padding: 160px 0;
-    text-align: center;
-    
-    h3 {
-        color: $navy;
-        font-size: rem-calc(32); 
-
-        @include md {
-            font-size: 50px;
-        }
-
-        @include lg {
-            font-size: 60px;
-        }
-
-    }
-
-    p {
-        color: $turquoise;
-        font-size: 20px;
-
-        @include md {
-            font-size: 25px;
-        }
-
-        @include lg {
-            font-size: 32px;
-        }
-    }
-
-    div {
-        
-        background-image: url('../img/oval.png');
-        background-size: 100px;
-        background-repeat: no-repeat;
-        background-position: center;
-        height: 600px;
-        
-        @include md {
-            background-size: 120px
-        }
-
-        @include lg {
-            background-size: 170px;
-        }
-
-        p {
-            padding-top: 290px;
-            font-size: 20px;
-            color: $white;
-
-            @include lg {
-                font-size: 40px;
-                padding-top: 280px;
-            }
-        }
-    }
-    
     @include md {
         height: 694px;
+        grid-template-columns: auto 760px auto;
     }
-    
+
     @include lg {
-       height: 800px; 
+        height: 799px;
     }
 
     @include xl {
-        height: 960px;
+        height: 959px;
+    }
+
+    .grid-content {
+        grid-area: grid-content;
+
+        h3 {
+            color: $navy;
+            padding-top: 40px;
+    
+            @include md {
+                padding-top: 90px;
+            }
+    
+            @include lg {
+            }
+        }
+    
+        h4 {
+            color: $turquoise;
+        }
+    
+        #start-button {
+            display: grid;
+            padding-top: 100px;
+            
+            #oval {
+                background-image: url("../img/circle.svg");
+                background-position: center;
+                background-size: cover;
+                margin: 0 auto;
+                height: 100px;
+                width: 100px;
+
+                @include lg {
+                    height: 150px;
+                    width: 150px;
+                }
+
+                @include xl {
+                    height: 200px;
+                    width: 200px;
+                }
+
+                p {
+                    padding-top: 25px;
+                    color: $white;
+
+                    @include md {
+                        padding-top: 25px;
+                    }
+
+                    @include lg {
+                        padding-top: 50px;
+                        font-size: rem-calc(30);
+                    }
+                    
+                    // @include xl {
+                    //     padding-top: 70px;
+                    // }
+                }
+
+            }
+        }     
     }
 }

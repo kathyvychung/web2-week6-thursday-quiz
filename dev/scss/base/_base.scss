@@ -9,3 +9,15 @@ ul {
     }
 }
 
+.container-grid{
+    display: grid;
+    grid-template-columns: auto 1200px auto;
+    grid-template-areas: ". grid-content .";
+    min-height: 10vh;
+
+    .grid-content{
+        grid-area: grid-content;
+        text-align: center;
+    }
+}
+

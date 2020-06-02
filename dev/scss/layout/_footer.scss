@@ -4,20 +4,73 @@
 #footer {
     background-color: $black;
     height: 155px;
-    padding: 50px;
 
-    background-image: url( '../img/social.png');
-    background-size: 200px;
-    background-position: center;
-    background-repeat: no-repeat;
+    @include lg {
+        display: grid;
+        grid-template-columns: repeat (3 1fr);
+        grid-template-areas:
+        "icons . web";
+        padding-top: 40px;
+    }
+
+    #social-icons {
+        grid-area: icons;
+        padding-top: 30px;
+        width: 200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat (4 1fr);
+        grid-template-areas: 
+        "facebook twitter youtube instagram";
+
+        @include lg {
+           margin: 10px;
+        }
+        
+        #facebook {
+            grid-area: facebook;
+            background-image: url( '../img/facebook.svg');
+            background-size: 30;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 30px;
+            }
+    
+        #twitter {
+            grid-area: twitter;
+            background-image: url( '../img/twitter.svg');
+            background-size: 30px;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 30px;
+        }
+    
+        #youtube {
+            grid-area: youtube;
+            background-image: url( '../img/youtube.svg');
+            background-size: 30px;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 30px;
+        }
+            
+        #instagram {
+            grid-area: instagram;
+            background-image: url( '../img/instagram.svg');
+            background-size: 30px;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 30px;
+        }
+    }
 
     p::first-letter {
         color: $orange;
     }
     p{
+        grid-area: web;
         color: $white;
         text-align: center;
-        padding-top: 100px;
     }
 
     @include md {
@@ -28,6 +81,7 @@
         background-position: left;
         p {
             text-align: right;
+            padding-right: 20px;
             
         }
     }

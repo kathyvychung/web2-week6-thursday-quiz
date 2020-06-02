@@ -2,72 +2,76 @@
     Section 2
 ============= */
 #section-2{
+    display: grid;
+    grid-template-areas: ". grid-content .";
     background-color: $grey;
 
-    // @include xl {
-    //     display: grid;
-    //     grid-template-columns: auto 1200px auto;
-    //     grid-template-areas: ". section-2 .";
-    // }
-    #text-section {
-        grid-area: text-section;
-        margin: 20px;
-        padding: 10px;
+    .grid-content {
 
+        @include md {
+            display: grid;
+            grid-template-columns: 70% auto;
+            grid-template-areas: 
+                "text-selection picture";
+        }
 
-        h1 {
-            text-align: center;
+        @include lg {
+            display: grid;
+            grid-template-columns: 50% auto;
+            grid-template-areas: 
+                "picture text-selection";
+        }
+    
+        #text-selection {
+            grid-area: text-selection;
+            h1 {
+                text-align: center;
+    
+                @include md {
+                    text-align: left;
+                }
+            }
+
+            p {
+                text-align: justify;
+                margin: 10px;
+            }
 
             @include md {
                 text-align: left;
+                margin: 0px;
+                padding-left: 30px;
+                padding-right: 30px;
+
+            }
+    
+            @include lg {
+                margin: 100px;
+                padding-left: 0px;
+            }
+
+        }
+
+        aside {
+            grid-area: picture;
+            background-image: url('../img/aside.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 320px;
+    
+            @include md {
+                height: 246px;
+            }
+    
+            @include lg {
+                height: 600px;
+                width: 600px;
+            }
+    
+            @include xl {
+                height: 600px;
             }
         }
-        p {
-            text-align: justify;
-            padding-bottom: 30px;
-        }
 
-        @include lg {
-            margin: 100px;
-        }
-
-    }
-    
-   aside {
-        grid-area: picture;
-        background-image: url('../img/aside.jpg');
-        background-size: cover;
-        background-position: center;
-        height: 500px;
-
-        @include md {
-            height: 300px;
-        }
-
-        @include lg {
-            height: 600px;
-        }
-
-        @include xl {
-            height: 600px;
-        }
-    }
-
-    @include md {
-        display: grid;
-        grid-template-areas: "text-section picture";
-        grid-template-columns: 60% auto;
-    }
-
-    @include lg {
-        display: grid;
-        grid-template-areas: "picture text-section";
-        grid-template-columns: 50% auto;
-    }
-
-    @include xl {
-        // display: grid;
-        // grid-template-columns: auto 1200px auto;
-        // grid-template-areas: "picture text";
     }
 }

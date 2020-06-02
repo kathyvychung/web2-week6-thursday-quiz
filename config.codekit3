@@ -40,6 +40,26 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/deploy/img/circle.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/circle.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/deploy/img/facebook.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/facebook.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
 	"/deploy/img/gallery1.jpg": {
 		"ft": 16384,
 		"iS": 19956,
@@ -84,27 +104,35 @@
 		"opt": 0,
 		"q": 100
 		},
-	"/deploy/img/Oval.png": {
-		"ft": 32768,
-		"iS": 2243,
-		"oA": 0,
-		"oAP": "/deploy/img/Oval.png",
+	"/deploy/img/instagram.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/instagram.svg",
 		"oF": 0,
-		"oIPL": 0,
 		"opt": 0,
-		"oT": 1,
-		"q": 100
+		"plM": 52780316221407,
+		"prP": 0
 		},
-	"/deploy/img/social.png": {
-		"ft": 32768,
-		"iS": 2629,
-		"oA": 0,
-		"oAP": "/deploy/img/social.png",
+	"/deploy/img/twitter.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/twitter.svg",
 		"oF": 0,
-		"oIPL": 0,
 		"opt": 0,
-		"oT": 1,
-		"q": 100
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/deploy/img/youtube.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/youtube.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
 		},
 	"/deploy/index.html": {
 		"cB": 0,
@@ -394,14 +422,6 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/Github Respo.rtf",
-		"oF": 0
-		},
-	"/pa/.gitignore": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/pa/.gitignore",
 		"oF": 0
 		},
 	"/README.html": {
